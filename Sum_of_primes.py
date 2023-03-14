@@ -26,4 +26,4 @@ def is_prime(n):
 board = [[2, 3, 4], [5, 6, 7], [8, 9, 10]]
 result = abs(sum_white_primes_minus_black_primes(board))
 print(f"sum of white primes minus the black primes in the board is {result}")
-print(f"sum of white primes minus the black primes in the board is {result}")
+
