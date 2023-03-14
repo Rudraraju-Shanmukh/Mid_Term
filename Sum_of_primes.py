@@ -17,18 +17,13 @@ def sum_white_primes_minus_black_primes(board):
 def is_prime(n):
     if n < 2:
         return False
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int((n ** 0.5))):
         if n % i == 0:
             return False
     return True
 
 
-board = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-result = sum_white_primes_minus_black_primes(board)
+board = [[2, 3, 4], [5, 6, 7], [8, 9, 10]]
+result = abs(sum_white_primes_minus_black_primes(board))
 print(f"sum of white primes minus the black primes in the board is {result}")
 print(f"sum of white primes minus the black primes in the board is {result}")
